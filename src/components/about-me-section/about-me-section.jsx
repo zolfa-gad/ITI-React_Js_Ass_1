@@ -20,7 +20,7 @@ function AboutMeSection() {
               Alias odit suscipit cupiditate quis vero autem repudiandae
               aspernatur?
             </p>
-            <Button text="Contact Me" color="btn-dark"></Button>
+            <Button text="Download Resume" color="btn-dark"></Button>
           </div>
         </div>
       </section>

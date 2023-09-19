@@ -26,7 +26,13 @@ function PortofolioSection() {
               } else {
                 color = "bg-dark";
               }
-              return <Card color={color} text={item.text}></Card>;
+              return (
+                <Card
+                  key={`card${index}`}
+                  color={color}
+                  text={item.text}
+                ></Card>
+              );
             })}
             {/* <Card color="bg-secondary" text="Web Design"></Card>
             <Card color="bg-dark" text="Mobile Design"></Card>

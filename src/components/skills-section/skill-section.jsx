@@ -43,16 +43,20 @@ function SkillsSection() {
               <h2 className="fs-3 fw-bold p-1 ">My Focus</h2>
               <div className="w-75 border-bottom border-3 border-light"></div>
               <ul className="list-unstyled fs-5 p-3 d-flex flex-column justify-content-center align-items-start w-75">
-                {focusList.map((item) => (
-                  <li>{item.text}</li>
+                {focusList.map((item, index) => (
+                  <li key={`li${index}`}>{item.text}</li>
                 ))}
                 {/* <li>UI/UX Design</li> <li>Responsive Design</li>
                 <li>Web Design</li> <li>Web App Design</li> */}
               </ul>
             </div>
             <div className=" w-100  ">
-              {progressList.map((item) => (
-                <ProgressBar text={item.text} value={item.value}></ProgressBar>
+              {progressList.map((item, index) => (
+                <ProgressBar
+                  key={`bar${index}`}
+                  text={item.text}
+                  value={item.value}
+                ></ProgressBar>
               ))}
               {/* <ProgressBar text="HTML" value="90"></ProgressBar>
               <ProgressBar text="Css" value="90"></ProgressBar>
