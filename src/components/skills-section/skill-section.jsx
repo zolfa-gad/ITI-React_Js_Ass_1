@@ -53,7 +53,7 @@ function SkillsSection() {
             <div className=" w-100  ">
               {progressList.map((item, index) => (
                 <ProgressBar
-                  key={`bar${index}`}
+                  key={`bar-${index}`}
                   text={item.text}
                   value={item.value}
                 ></ProgressBar>
